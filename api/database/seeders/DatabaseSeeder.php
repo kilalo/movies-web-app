@@ -14,8 +14,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $path = storage_path('dump.sql');
-        $this->command->info($path);
-
         \DB::unprepared(file_get_contents($path));
         $this->command->info('Database dump imported successfully !');
     }
