@@ -10,6 +10,7 @@ OR
 
 ```docker-compose up --build```
 
+You are now listening to the app on localhost:3000
 
 ## BACK
 ```cp .env.example .env```
