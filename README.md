@@ -13,4 +13,9 @@ OR
 
 ## BACK
 ```cp .env.example .env```
-```docker-compose up --build```
+
+```docker-compose up --build -d```
+
+```docker-compose run app composer install```
+
+```docker-compose run app php artisan db:seed```
