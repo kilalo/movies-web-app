@@ -229,8 +229,8 @@ export default {
         console.error(response)
       })
     },
-    changePage () {
-      this.currentPage++
+    changePage (pageNumber) {
+      this.currentPage = pageNumber
       this.getMovies()
     },
     formateDate (d) {
